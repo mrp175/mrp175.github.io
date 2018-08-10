@@ -2,33 +2,58 @@
 <html>
 
 <style>
-body {
+  body {
     color: rgb(50, 50, 56);
     font-family: "Trebuchet MS", Helvetica;
   }
 
-.boxleft {
-  float: left; 
-  width: 49.5%; 
-  height: 100px"
+  .boxleft {
+    float: left;
+    width: 49.5%;
+    height: 100px"
+
+  }
+
+  .boxright {
+    float: right;
+    width: 49.5%;
+    height: 100px;
+  }
+
+  .scboxwrapper {
+    margin: auto;
+    width: 98%;
+    max-width: 1000px;
+    height: 410px;
+    background: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+  }
+
+  .divider {
+    height: 30px;
+  }
+
+  .videoWrapper {
+    position: relative;
+    max-width: 1000px;
+    padding-bottom: 56.25%;
+    height: 0%;
+    overflow: hidden;
+    
+  }
+
+  .videoWrapper iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.boxright {
-  float: right; 
-  width: 49.5%; 
-  height: 100px;
-}
-
-.scboxwrapper {
-  margin: auto; 
-  width: 98%; 
-  height: 500px;
-  margin-top: 10px; 
-  margin-bottom: 10px; 
-  padding-top: 15px; 
-  padding-bottom: 15px; 
-  background: rgb(233,233,233)"
-}
 
 </style>
 
@@ -37,43 +62,65 @@ body {
 <head>
   <title>Ptolemy Powlesland</title>
 </head>
+
 <body>
-  <h1>Ptolemy Powlesland</h1>
-  <h4> About Me</h4>
-  <p>Hi I'm Ptolemy and I've always been interested in building things. When I was 4 I was obsessed with making paper aeroplanes, then my obsession moved on to Lego and K'nex. At 11 I got my hands on a copy of Propellerhead's Reason 2.5. I made my first electronic music composition in 2003. I haven't stopped making music to this day.</p>
+  <main>
+    <div style="background: rgb(233,233,233)">
+      <h1>Ptolemy Powlesland</h1>
+      <h4> About Me</h4>
+      <p>Hi I'm Ptolemy and I've always been interested in building things. When I was 4 I was obsessed with making paper aeroplanes,
+        then my obsession moved on to Lego and K'nex. At 11 I got my hands on a copy of Propellerhead's Reason 2.5. I made
+        my first electronic music composition in 2003. I haven't stopped making music to this day.</p>
 
-  <p>I completed a BSc in Music and Sound Technology in 2016, and whilst it wasn't perhaps quite what I expected, it was a great experience. One of my favourite units was the creation of an audio plugin written entirely in MaxMSP, a visual programming language for music and multimedia. I was surprised by the similar approach between programming and music production, but I also realised that programming wasn't as difficult as I once thought! </p>
+      <p>I completed a BSc in Music and Sound Technology in 2016, and whilst it wasn't perhaps quite what I expected, it was
+        a great experience. One of my favourite units was the creation of an audio plugin written entirely in MaxMSP, a visual
+        programming language for music and multimedia. I was surprised by the similar approach between programming and music
+        production, but I also realised that programming wasn't as difficult as I once thought! </p>
 
-  <p>Recntly, I have discovered the awesome Founders and Coders and have been working towards completing my application for the bootcamp.</p>
+      <p>Recntly, I have discovered the awesome Founders and Coders and have been working towards completing my application
+        for the bootcamp.</p>
 
-  <h4>Founders and Coders</h4>
-  <ul>
-      <li>Attend Founders and Coders meetups</li>
-      <li>Created a GitHub account</li>
-      <li>Joined and have been active on Founders and Coders' Gitter community</li>
-      <li>Have created and have been using GitHub</li>
-      <li>Have created and have been using GitHub</li>
-      <li>Have created and have been using GitHub</li>
-    </ul>
-  
-  <h4> Music Production</h4>
+      <h4>Founders and Coders</h4>
+      <ul>
+        <li>Attend Founders and Coders meetups</li>
+        <li>Created a GitHub account</li>
+        <li>Joined and have been active on Founders and Coders' Gitter community</li>
+        <li>Have created and have been using GitHub</li>
+        <li>Have created and have been using GitHub</li>
+        <li>Have created and have been using GitHub</li>
+      </ul>
 
-  <div class="scboxwrapper">
-    
-    <iframe width="100%" height="450" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/125325674%3Fsecret_token%3Ds-bFuuT&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+      <h4> Music Production</h4>
 
-  </div>
+      <div class="scboxwrapper">
 
-  <div class="scboxwrapper">
+        <iframe width="100%" height="410" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/579291123%3Fsecret_token%3Ds-9vTng&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YanrHecbBos" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dqCmYYFgxiU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="divider"></div>
 
-  </div>
- 
-  
+      <div class="scboxwrapper">
 
-  <footer>PP 2018</footer>
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YanrHecbBos" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dqCmYYFgxiU" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+
+
+
+      <footer>PP 2018</footer>
+    </div>
+  </main>
 </body>
+
 </html>

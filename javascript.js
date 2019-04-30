@@ -126,3 +126,109 @@ function musicFadeDown() {
   document.getElementById("no-scroll").style.overflowY = "scroll";
   document.getElementById('music-overlay').style.overflowY = "hidden";
 }
+
+
+
+/*-------IMAGE CAROUSEL START -------*/
+
+var position = -100;
+let intervalID;
+
+
+function left() {
+  
+  if (document.getElementById("carousel-hidden").checked === true) {
+      document.getElementById("carousel-hidden").checked = false;
+      clearInterval(intervalID);
+    };
+  
+  position += 2;
+  var images = document.getElementById("carousel-images");
+  var time = setInterval(move, 8);
+  console.log(position);
+
+  function move() {
+    if (position % 100 == 0) {
+      console.log(position);
+      clearInterval(time);
+    } else {
+      position += 2;
+      images.style.left = position + "%";
+      if (position == 0) {
+         position = -500;
+         images.style.left = -500;
+      }
+    }
+  }
+}
+
+
+function right() {
+    var time = setInterval(move, 8);
+  
+    if (document.getElementById("carousel-hidden").checked === true) {
+      document.getElementById("carousel-hidden").checked = false;
+      clearInterval(intervalID);
+    };
+  
+  position -= 2;
+  var images = document.getElementById("carousel-images");
+  
+  console.log(position);
+  
+  function move() {
+    if (position % 100 == 0) {
+      console.log(position);
+      clearInterval(time);
+    } else {
+      position -= 2;
+      images.style.left = position + "%";
+       if (position == -600) {
+         position = -100;
+         images.style.left = -100;
+      }
+    }
+  }
+}
+
+
+function auto() {
+  position -= 2;
+  var images = document.getElementById("carousel-images");
+  var autotime = setInterval(move, 14);
+  console.log(position);
+  
+  function move() {
+    if (position % 100 == 0) {
+      console.log(position);
+      clearInterval(autotime);
+    } else {
+      position -= 2;
+      images.style.left = position + "%";
+       if (position == -600) {
+         position = -100;
+         images.style.left = -100;
+      }
+    }
+  }
+}
+
+
+const autoplay = document.querySelector("#carousel-hidden");
+  
+autoplay.addEventListener("change", function(e){
+  if (autoplay.checked == false) {
+    console.log("I am a potato");
+    clearInterval(intervalID);
+  } else {
+    auto();
+    intervalID = setInterval(auto, 3000);
+  }
+})
+
+function checked() {
+  document.getElementById("carousel-hidden").checked = true;
+  intervalID = setInterval(auto, 3000);
+}
+
+/*------- IMAGE CAROUSEL END --------*/

@@ -1557,6 +1557,29 @@ body {
   .cell {
     width: 100vw;
   }
+
+  #cell-one {
+    width: 100vw; 
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+  }
+
+  .gradient {
+    width: 100vw;
+  }
+
+  .hover {
+    width: 100vw;
+  }
+
+  .hover-2 {
+    width: 100vw;
+  }
+
+  #projects-grid {
+    margin-bottom: 75px;
+  }
 }
 
 @media(max-width: 420px)  {
